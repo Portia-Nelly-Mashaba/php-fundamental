@@ -15,6 +15,23 @@
             color: #2c3e50; 
             border-bottom: 2px solid #3498db;
             padding-bottom: 10px;
+            position: relative;
+        }
+        .back-button {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .back-button:hover {
+            background: #2980b9;
         }
         .sentence-card {
             background: white;
@@ -35,7 +52,11 @@
     </style>
 </head>
 <body>
-    <h1>User Profile Variations</h1>
+    <h1>User Profile Variations
+        <a href="{{ route('home') }}" class="back-button">
+            ← Back to Home
+        </a>
+    </h1>
     
     <div class="original-data">
         <h3>Original User Data:</h3>
