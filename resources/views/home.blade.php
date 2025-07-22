@@ -6,8 +6,8 @@
     <title>Week 1 Activities | PHP Fundamentals</title>
     <style>
         :root {
-            --primary: #4f46e5;
-            --primary-dark: #4338ca;
+            --primary: #3498db;
+            --primary-dark:rgb(32, 111, 163);
             --secondary: #f9fafb;
             --text: #1f2937;
             --text-light: #6b7280;
@@ -109,7 +109,7 @@
 <body>
     <div class="container">
         <header>
-            <h1>Week 1 Activity</h1>
+            <h1>Week 1 Activities</h1>
             <p class="subtitle">
                 This week focuses on reinforcing PHP fundamentals including variables, data types, 
                 debugging techniques, and conditional logic through practical exercises.
@@ -117,15 +117,29 @@
         </header>
         
         <div class="activities-grid">
-            @foreach($activities as $activity)
             <div class="activity-card">
                 <div class="card-content">
-                    <h2 class="card-title">{{ $activity['title'] }}</h2>
-                    <p class="card-description">{{ $activity['description'] }}</p>
-                    <a href="{{ $activity['route'] }}" class="btn">Start Activity</a>
+                    <h2 class="card-title">User Profile Generator</h2>
+                    <p class="card-description">Generate multiple formatted sentences from user data with type validation and default handling.</p>
+                    <a href="{{ route('profile-generator') }}" class="btn">Start Activity</a>
                 </div>
             </div>
-            @endforeach
+            
+            <div class="activity-card">
+                <div class="card-content">
+                    <h2 class="card-title">Debugging Challenge</h2>
+                    <p class="card-description">Practice identifying and fixing common PHP errors in broken scripts.</p>
+                    <a href="{{ route('debugging-challenge') }}" class="btn">Start Activity</a>
+                </div>
+            </div>
+            
+            <div class="activity-card">
+                <div class="card-content">
+                    <h2 class="card-title">Access Control Logic</h2>
+                    <p class="card-description">Implement role-based access control with conditional logic for different user types.</p>
+                    <a href="{{ route('access-control', ['role' => 'admin']) }}" class="btn">Start Activity</a>
+                </div>
+            </div>
         </div>
         
         <footer>

@@ -23,6 +23,25 @@
             border-radius: 4px;
             border-left: 3px solid #0d6efd;
         }
+        .access-card {
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            background: #f8f9fa;
+            border-left: 5px solid #6c757d;
+        }
+        .admin { border-left-color: #28a745; }
+        .editor { border-left-color: #ffc107; }
+        .subscriber { border-left-color: #17a2b8; }
+        .default { border-left-color: #dc3545; }
+        .role-links a {
+            display: inline-block;
+            margin: 5px;
+            padding: 8px 12px;
+            background: #e9ecef;
+            border-radius: 4px;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>

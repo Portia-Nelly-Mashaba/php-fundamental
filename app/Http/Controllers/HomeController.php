@@ -16,6 +16,12 @@ class HomeController extends Controller
                 'title' => 'Debugging Challenge',
                 'route' => route('debugging-challenge'),
                 'description' => 'Practice identifying and fixing common PHP errors in broken scripts.'
+            ],
+            [
+                'title' => 'Access Control Logic',
+                'route' => route('access-control', ['role' => 'admin']),
+                'description' => 'Role-based access control demonstration',
+                'icon' => 'fa-lock'
             ]
         ];
 
